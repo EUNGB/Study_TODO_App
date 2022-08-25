@@ -4,12 +4,12 @@ import com.eungb.todo_app.data.entity.ToDoEntity
 import com.eungb.todo_app.data.repository.ToDoRepository
 import com.eungb.todo_app.domain.UseCase
 
-internal class InsertToDoListUseCase(
+internal class InsertToDoItemUseCase(
     private val toDoRepository: ToDoRepository
 ) : UseCase {
 
-    suspend operator fun invoke(todoList: List<ToDoEntity>) {
-        toDoRepository.insertToDoList(todoList)
+    suspend operator fun invoke(todoItem: ToDoEntity) {
+        toDoRepository.insertToDoItem(todoItem)
     }
 
 }

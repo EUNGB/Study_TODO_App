@@ -8,6 +8,6 @@ internal class DeleteAllToDoItemUseCase(
 ) : UseCase {
 
     suspend operator fun invoke() {
-        return toDoRepository.deleteAll()
+        toDoRepository.deleteAll()
     }
 }
