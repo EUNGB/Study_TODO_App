@@ -2,13 +2,13 @@ package com.eungb.todo_app.data.repository
 
 import com.eungb.todo_app.data.entity.ToDoEntity
 
-class DefaultToDoRepository: ToDoRepository {
+class DefaultToDoRepository : ToDoRepository {
 
     override suspend fun getToDoList(): List<ToDoEntity> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun insertToDoItem(toDoItem: ToDoEntity) {
+    override suspend fun insertToDoItem(toDoItem: ToDoEntity): Long {
         TODO("Not yet implemented")
     }
 
